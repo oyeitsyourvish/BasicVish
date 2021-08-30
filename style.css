@@ -1,0 +1,384 @@
+
+/*------------ YE CSS INDEX.HTML KE LIYE LIKHI HUI HAI NICHE WALI AAGE KI CSS KA MASSAGE AAGE COMMENT KIYA HAI. --------------*/
+/*----------------------- ISSKA USE NAVIGATION BAR BANANE KE LIYE KIYA GAYA HAI. ---------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------- YE CSS INDEX.HTML KI HI HAI LAKIN ISS CSS KA USE LOGIN AND SIGN UP FORM BANANE KE LIYE KIYA GAYA HAI. ------------*/
+.main-content{
+    display: grid;
+    height: 90vh;
+    width: 100%;
+    place-items: center;
+    background: #f2f2f2;
+    background: -webkit-linear-gradient(left, #a445f2, #fa4299);
+}
+.wrapper{
+    overflow: hidden;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .tittle-text{
+    display: flex;
+    width: 200%;
+}
+
+.wrapper .tittle-text .tittle{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .form-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-container .slide-control{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+
+.slide-control .slide{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.slide-control .signup{
+    color: #000;
+}
+.slide-control .slide-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: -webkit-linear-gradient(left, #a445f2, #fa4299);
+}
+
+input[type="radio"]{
+    display: none;
+}
+#signup:checked ~ .slide-tab{
+    left: 50%;
+}
+#signup:checked ~ .signup{
+    color: #fff;
+}
+#signup:checked ~ .login{
+    color: #000;
+}
+.form-container .form-inner{
+    display: flex;
+    width: 200%;
+}
+.form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-inner form .field{
+    height:50px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.form-inner form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.form-inner form .field input:focus{
+    border-color: #fc83bb;
+}
+.form-inner form .pass-link{
+    margin-top: 5px;
+}
+
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+    color: #fa4299;
+    text-decoration: none;
+}
+
+.form-inner form .signup-link{
+    text-align: center;
+    margin-top: 30px;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+    text-decoration: underline;
+}
+
+form .field input[type="submit"]{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    border: none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #a445f2, #fa4299);
+}
+
+/*-------------------------------- ISSE FOOTER COPYRIGHT KE LE USE KIYA HAI --------------------------------------*/
+#main-footer
+{
+    text-align: center;
+    background: #444444;
+    color:white;
+    padding:2px;
+}
+#main-footer p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 32px;
+    margin-bottom: 2px;
+}
+  
+
+
+
+/*--------------- YE ABOUT.HTML PAGE MAI ABOUT KA PAGE BANANE KE LIYE ISTEMAL KIYA GAYA HAI. ------------------------------*/
+.About-Body{
+    height: 90vh;
+    background: -webkit-linear-gradient(left, #a445f2, #fa4299);
+    background-position: 0 1000px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-content{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 20pxrem;
+    text-align: center;
+}
+
+h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: black;
+    font-size: 37px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+ 
+/* .image{
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+} */
+
+p{
+    font-size: 30px;
+    color: #fff;
+    line-height: 44px;
+    margin-bottom: 60px;
+}
+
+.Btn{
+    display: inline-block;
+    padding: 1rem 7.5rem;
+    background: #f6f6f6;
+    font-size: 25PX;
+    text-decoration: none;
+    color: #398f51;
+    border-radius: 10px;
+    transition: 0.5s ;
+}
+.Btn:hover{
+    background: #dadada;
+}
+
+
+
+
+
+/*-------------------- YE CONTACT.HTML PAGE KE LIYE CONTACT PAGE BANANE KE LIYE CSS KA USE KIYA GAYA HAI. ------------------*/
+.contact-page{
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(left, #a445f2, #fa4299);
+    font-size: 14px;
+    height: 90vh;
+}
+
+.container-contacts{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.contact-box-page{
+    background: #fff;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px ;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: #1c00b5;
+    color: #fff;
+}
+h1{
+    margin-bottom: 10px;
+}
+h4{
+    margin-bottom: 40px;
+
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+ }
+ label{
+    margin-bottom: 6px;
+    /* display: block; */
+    color: #1c00b5;
+} 
+button{
+    background:#1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15 0px rgba(28, 0, 181, 0.3);
+}
+.contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 25px;
+}  
+ .contact-right h3{
+
+    font-weight: 600;
+    margin-bottom: 25px;
+} 
+tr td:first-child{
+    padding-right: 20px;
+
+} 
+ tr td{
+    padding-top: 20px;
+}
